@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/src/MartinuxShop/PageBundle/Resources/views/Default/page/layout/page.html.twig</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/app/Resources/views/moduleUsed/panier.html.twig</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/src/MartinuxShop/PageBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/app/Resources/views/layout/layout.html.twig</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/src/MartinuxShop/EcommerceBundle/Resources/views/Default/produit/layout/index.html.twig</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/app/Resources/views/moduleUsed/utilisateur.html.twig</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/src/MartinuxShop/EcommerceBundle/Controller/ProduitsController.php</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/src/MartinuxShop/EcommerceBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/app/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/src/MartinuxShop/EcommerceBundle/Tests/Controller/DefaultControllerTest.php</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/src/Utilisateurs/UtilisateurBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/MartinuxShop/app/Resources/views/moduleUsed/navigation.html.twig</file>
+        </group>
+    </open-files>
+</project-private>

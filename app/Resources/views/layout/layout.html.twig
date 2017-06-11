@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-responsive.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" />
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="{{ path('Accueil') }}">MartinuxShop</a>
+                <div class="nav-collapse collapse">
+                    <form class="navbar-form form-search pull-right">
+                        <input id="Search" name="Search" type="text" placeholder="search" class="input-medium search-query">
+                        <button type="submit" class="btn">Rechercher</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block body %}{% endblock %}
+    <hr />
+    <footer id="footer" class="vspace20">
+        <div class="container">
+            <div class="row">
+                <div class="span4 offset1">
+                    <h4>Informations</h4>
+                    <ul class="nav nav-stacked">
+                        <li><a href="{{ path('page', { 'id' : 1 }) }}">CGV</a>
+                        <li><a href="{{ path('page', { 'id' : 2 }) }}">Mentions légales</a>
+                    </ul>
+                </div> 
+
+                <div class="span4">
+                    <h4>Notre entrepôt</h4>
+                    <p><i class="icon-map-marker"></i>&nbsp;Akwa Boulevard de la liberte, rue 336</p>
+                </div>
+
+                <div class="span2">
+                    <h4>Nous contacter</h4>
+                    <p><i class="icon-phone"></i>&nbsp;Tel: 693 46 36 45 </p>
+                    <p><i class="icon-print"></i>&nbsp;Fax: 652 56 79 85</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span4 offset4 social-icons">
+                    <ul class="inline">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-dribbble"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="span4">
+                    <p>&copy; Copyright 2017 - MBANG Martin Tresor</p>
+                </div>
+            </div>
+        </div>
+    </footer>	
+    <script src="{{ asset('js/jquery-1.10.0.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

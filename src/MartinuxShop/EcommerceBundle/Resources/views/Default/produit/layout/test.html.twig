@@ -1,0 +1,12 @@
+{% extends "layout/layout.html.twig" %}
+{% block body %}
+    <h2><em>Formulaire de test:</em></h2>
+    <div class="row">
+        <div class="span11 offset1">
+            {{ form_start(form, {'method': 'post', 'action': path('test') }) }}
+                {{ form_widget(form) }}
+                <button class="btn btn-primary" id="envoyer" name="envoyer">Envoyer</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+{% endblock %}

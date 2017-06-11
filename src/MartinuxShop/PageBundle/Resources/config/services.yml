@@ -1,0 +1,4 @@
+services:
+#    page.example:
+#        class: MartinuxShop\PageBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

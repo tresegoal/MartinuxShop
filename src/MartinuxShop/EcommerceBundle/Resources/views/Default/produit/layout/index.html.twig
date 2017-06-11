@@ -1,0 +1,68 @@
+{% extends "layout/layout.html.twig" %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                {% include '::moduleUsed/panier.html.twig' %}
+                {% include '::moduleUsed/navigation.html.twig' %}
+                {% include '::moduleUsed/utilisateur.html.twig' %}
+        </div>
+        <div class="span9">
+
+            <ul class="thumbnails">
+                {% for i in 0..2 %}
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <img src="{{ asset('img/[029517].jpg') }}" alt="Un Laptop" width="300" height="300">
+                            <div class="caption">
+                                <h4>Le Laptop de vos reves</h4>
+                                <p>300 000 fcfa</p>
+                                <a class="btn btn-primary" href="{{ path('Presentation') }}">Plus d'infos</a>
+                                <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+                {% for i in 0..2 %}
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <img src="{{ asset('img/[028601].jpg') }}" alt="Un I-phone" width="250" height="250">
+                            <div class="caption">
+                                <h4>L'I-phone de vos reves</h4>
+                                <p>100 000 fcfa</p>
+                                <a class="btn btn-primary" href="{{ path('Presentation') }}">Plus d'infos</a>
+                                <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+                {% for i in 0..2 %}
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <img src="{{ asset('img/[028576].jpg') }}" alt="Un Nokia Lumia" width="100" height="100">
+                            <div class="caption">
+                                <h4>L'android de vos reves</h4>
+                                <p>150 000 fcfa</p>
+                                <a class="btn btn-primary" href="{{ path('Presentation') }}">Plus d'infos</a>
+                                <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+            <div class="pagination">
+                <ul>
+                    <li class="disabled"><span>Précédent</span></li>
+                    <li class="disabled"><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">Suivant</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
